@@ -1,4 +1,4 @@
-name: Bosch Job Alerts
+name: Job Alerts
 
 on:
   schedule:
