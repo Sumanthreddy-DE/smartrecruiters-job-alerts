@@ -51,7 +51,10 @@ def filter_jobs(jobs):
         released = job.get("releasedDate", "")
         if not released:
             continue
-        released_dt = datetime.fromisoformat(released.replace("Z", "+00:00"))
+        try:
+            released_dt = datetime.fromisoformat(released.replace("Z", "+00:00"))
+        except ValueError:
+            continue
         if released_dt < cutoff:
             continue
 
