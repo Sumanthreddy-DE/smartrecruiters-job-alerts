@@ -57,7 +57,7 @@ Reasoning behind that and the other choices is in [docs/DESIGN.md](docs/DESIGN.m
    - `GMAIL_ADDRESS` — the account that sends *and* receives the digest
    - `GMAIL_APP_PASSWORD` — see [below](#gmail-app-password)
 3. **Edit `CONFIG`** at the top of `main.py` to point at your employer and city.
-4. **Actions → Bosch Job Alerts → Run workflow.** Check your inbox, then let the
+4. **Actions → Job Alerts → Run workflow.** Check your inbox, then let the
    cron take over.
 
 Running it locally is the same two variables:
